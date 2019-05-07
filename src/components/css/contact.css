@@ -1,0 +1,38 @@
+#contact{ 
+    padding-top:10rem;
+    
+    
+   
+}
+
+#contact-form{
+    margin-left:2rem;
+  
+}
+
+h2{
+    color:crimson;
+    
+}
+
+p{
+    color: white;
+}
+
+/* contact-personel */
+#contact-personel{
+    margin-left:3rem;
+}
+#contact-personel p{
+    margin-left:2rem;
+    margin-top:1rem;
+}
+
+
+.icons i {
+    margin-bottom:0;
+    margin-top:0.3rem;
+    margin-left:5rem;
+    font-size:1.8rem;
+    color:white;
+}

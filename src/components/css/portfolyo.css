@@ -1,0 +1,33 @@
+#portfolyo{
+    padding-top:7.5rem;
+}
+
+.portfolyo-item{
+    position: relative;
+}
+
+.img-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color:green;
+    opacity: 0;
+
+}
+
+.img-overlay .icon{
+    color:#fff; 
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.portfolyo-item:hover .img-overlay{
+    opacity:0.8;
+    cursor: pointer;
+
+}
+

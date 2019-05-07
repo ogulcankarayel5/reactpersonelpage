@@ -1,0 +1,53 @@
+
+h1{
+
+    color:crimson;
+    transform:translateX(-22rem);
+    animation: slideIn .5s forwards;
+    animation-delay:.2s;
+
+}
+
+/* personel */
+
+#cv{
+    padding-top: 7.5rem;
+}
+
+p{
+    color:white;
+    font-size:1.4rem;
+   
+    transform:translateX(-30rem);
+    animation:slideIn .5s forwards;
+    animation-delay:.3s;
+    
+}
+
+/* skills */
+
+#progress{
+    transform:translateX(30rem);
+    animation:slideIn .5s forwards;
+    animation-delay:.3s;
+}
+.progress{
+    transform:translateX(30rem);
+    animation:slideIn .5s forwards;
+    animation-delay:.1s;
+}
+
+
+
+@keyframes slideIn{
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+

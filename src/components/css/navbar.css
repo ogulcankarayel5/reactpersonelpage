@@ -1,0 +1,97 @@
+nav{
+    background:linear-gradient(rgb(0, 0, 0,.9),rgba(0, 0, 0,.8)),url(../one3.jpg) center no-repeat;
+    background-size:cover;
+    font-size:1.6rem;
+    
+    
+}
+
+.navbar-toggler{
+    z-index:1;
+}
+
+.link{
+    color:#e6dada;
+    padding: 1rem 1rem;
+    letter-spacing: 0.05rem;
+    transition: all .7s;
+    
+}
+
+
+.link-brand{
+    color:crimson;  /* fallback for old browsers */
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+ul li{
+    margin-left: 1rem;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+
+ul li:nth-child(1){
+    animation-delay:0s;
+}
+
+ul li:nth-child(2){
+    animation-delay:.5s;
+}
+
+ul li:nth-child(3){
+    animation-delay:1s;
+}
+
+ul li:nth-child(4){
+    animation-delay:1.5s;
+}
+
+nav ul li .link:last-child{
+    margin-right:0;
+}
+
+
+nav ul li .link:hover,
+.link-brand:hover
+{
+    text-decoration: none;
+    font-size:2rem;
+    
+}
+
+.nav-item::before,
+.nav-item::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    background-color: crimson;
+    left:0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+.nav-item::before{
+    top:0;
+    transform-origin: left;
+}
+
+.nav-item::after{
+    bottom:0;
+    transform-origin: right;
+}
+
+.nav-item:hover::before,
+.nav-item:hover::after{
+    transform: scaleX(1);
+}
+
+@keyframes slideIn{
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
